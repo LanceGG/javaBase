@@ -8,9 +8,11 @@ import java.io.*;
 public class DataStreamDemo {
 
     public static void main(String[] args) {
-        Member[] members = {new Member("Justin",90),
+        Member[] members = {
+                new Member("Justin",90),
                 new Member("momor",95),
-                new Member("Bush",88)};
+                new Member("Bush",88)
+        };
         try {
             DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream("D:/work/member.txt"));
             for (Member member: members) {
